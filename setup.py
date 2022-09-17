@@ -1,15 +1,15 @@
 from setuptools import *
 
 LONG_DESC = """
-This is pil utilities
+This is pil helper
 """
 
-setup(name='pil_utils',
+setup(name='pil-helper',
 	  version='0.0.1',
-	  description='Pil utilities',
+	  description='Pil helper',
 	  long_description=LONG_DESC,
 	  author='Sang Ki Kwon',
-	  url='https://github.com/automatethem/pil_utils',
+	  url='https://github.com/automatethem/pil-helper',
 	  install_requires=[],
 	  author_email='automatethem@gmail.com',
 	  license='MIT',

@@ -5,13 +5,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import platform
 
-def pil_draw_rect(image, point1, point2):
+def draw_rect(image, point1, point2):
     draw = ImageDraw.Draw(image)
     draw.rectangle((point1, point2), outline=(0, 0, 255), width=3)
 
     return image
 
-def pil_draw_label(image, text, point, font_color=(255, 255, 255), font_size=28):
+def draw_label(image, text, point, font_color=(255, 255, 255), font_size=28):
     x, y = point
     draw = ImageDraw.Draw(image)
     if platform.system() == 'Darwin': #맥
@@ -35,7 +35,7 @@ def pil_draw_label(image, text, point, font_color=(255, 255, 255), font_size=28)
 
     return image
 
-def pil_draw_rect_with_label(image, point1, point2, text, font_color=(255, 255, 255), font_size=28):
+def draw_rect_with_label(image, point1, point2, text, font_color=(255, 255, 255), font_size=28):
     draw = ImageDraw.Draw(image)
     draw.rectangle((point1, point2), outline=(0, 0, 255), width=3)
 
@@ -62,7 +62,7 @@ def pil_draw_rect_with_label(image, point1, point2, text, font_color=(255, 255, 
 
     return image
 
-def pil_draw_point(image, point):
+def draw_point(image, point):
     x, y = point
     draw = ImageDraw.Draw(image)
     radius = 2
@@ -70,7 +70,7 @@ def pil_draw_point(image, point):
 
     return image
 
-def pil_draw_image(image, image_to_draw, point):
+def draw_image(image, image_to_draw, point):
     alpha_range = image_to_draw.getextrema()[-1]
     print(alpha_range)
     if alpha_range == (0, 255):

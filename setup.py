@@ -10,6 +10,7 @@ setuptools.setup(
 	version='0.0.7',
 	description='Pil helper',
 	long_description=open('README.md').read(),
+	long_description_content_type='text/markdown',
 	author='Sang Ki Kwon',
 	url='https://github.com/automatethem/pil-helper',
 	install_requires=requirements(),

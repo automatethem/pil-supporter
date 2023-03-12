@@ -6,13 +6,13 @@ def requirements():
         return f.read().splitlines()
 
 setuptools.setup(
-	name='pil-helper',
-	version='0.0.7',
-	description='Pil helper',
+	name='pil-supporter',
+	version='0.0.8',
+	description='Pil supporter',
 	long_description=open('README.md').read(),
 	long_description_content_type='text/markdown',
 	author='Sang Ki Kwon',
-	url='https://github.com/automatethem/pil-helper',
+	url='https://github.com/automatethem/pil-supporter',
 	install_requires=requirements(),
 	author_email='automatethem@gmail.com',
 	license='MIT',

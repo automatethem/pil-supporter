@@ -1,5 +1,10 @@
 # pil-supporter
 
+https://pypi.org/project/pil-supporter
+<pre>
+pip install pil-supporter
+</pre>
+
 Supported APIs
 <pre>
 import pil_supporter
